@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    color: black;
+}
+.page-name {
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+.index-container {
+    width: 42%;
+    min-height: 220px;
+    border: 4px solid black;
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.index-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.index-container a:hover {
+    text-decoration: underline;
+}
+.gallery-container {
+    width: 40%;
+    min-width: 350px;
+    border: 4px solid black;
+    padding: 10px;
+    margin: auto;
+}
+.gallery-nav {
+    border: 4px solid black;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.logo img {
+    width: 35px;
+    height: 22px;
+    object-fit: cover;
+}
+.menu {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 11px;
+}
+.hamburger {
+    font-size: 18px;
+    cursor: pointer;
+}
+.gallery-content {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+.form-box,.background-text {
+    width: 50%;
+    min-width: 0;
+    min-height: 135px;
+    border: 4px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.form-box h3,.background-text h3 {
+    font-size: 13px;
+}
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-box input,.form-box textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+}
+.form-box textarea {
+    resize: vertical;
+}
+.form-box button {
+    padding: 5px;
+    cursor: pointer;
+}
+.background-text {
+    background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.product-menu{
+    text-align: center;
+}
+.products-container {
+    width: 40%;
+    min-width: 350px;
+    border: 4px solid black;
+    padding: 8px;
+    margin: auto;
+}
+.products-banner {
+    min-height: 65px;
+    border: 4px solid black;
+    margin-bottom: 8px;
+    padding: 5px;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.products-banner h2,.products-banner p {
+    font-size: 12px;
+    margin: 3px;
+}
+.product-pic{
+    height: 50px;
+    width: 100%;
+}
+.product-list {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+.product {
+    flex: 1;
+    min-width: 0;
+    border: 4px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.product-image{
+    height: 500px;
+    width: 200px;
+}
+.product h3 {
+    font-size: 12px;
+}
+.product p {
+    font-size: 11px;
+}
+.product img {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+}
+.dashboard-container {
+    width: 40%;
+    min-width: 350px;
+    border: 4px solid black;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.sidebar {
+    width: 27%;
+    border: 4px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar h3 {
+    font-size: 12px;
+    margin: 0;
+}
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    font-size: 11px;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.dashboard-content {
+    flex: 1;
+    min-width: 0;
+    border: 4px solid black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dashboard-card {
+    min-height: 75px;
+    border: 4px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.dashboard-card img {
+    width: 45%;
+    height: 55px;
+    object-fit: cover;
+}
+.dashboard-text {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+.dashboard-text h3 {
+    font-size: 11px;
+}
+.dashboard-text p {
+    font-size: 10px;
+}
+@media (max-width: 600px) {
+.index-container,.gallery-container,.products-container,.dashboard-container {
+    width: 100%;
+    min-width: 0;
+}
+.gallery-nav {
+    flex-wrap: wrap;
+}
+.menu {
+    gap: 5px;
+}
+.gallery-content {
+    flex-direction: column;
+}
+.form-box,.background-text {
+    width: 100%;
+}
+.gallery-img{
+    width: 100%;
+}
+.product-list {
+    flex-direction: column;
+}
+.product {
+    width: 100%;
+}
+.dashboard-container {
+    flex-direction: column;
+}
+.sidebar {
+    width: 100%;
+}
+}
